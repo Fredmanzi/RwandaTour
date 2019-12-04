@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CricketActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cricket_id"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_height="200dp"
+            android:background="@drawable/cricketstade"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/cricket_id"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <TextView
+                android:text="@string/cricket_stadium"
+                android:padding="25dp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#FF5733"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_title"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Description"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/national_cricket_stadium_in_rwanda"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/mountain"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_location"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Location"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/gahanga_kigali_rwanda"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/location"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_killometer"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Kilometre from Kigali"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/_11_4km_from_kigali_city"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/gps"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_link"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Website"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/https_www_gahangacricketstadium_org"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/link"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_phone"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Phone"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/_250788214664"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/phonenumbers"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

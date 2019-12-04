@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UmubanoActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/marasa_id"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_height="200dp"
+            android:background="@drawable/marasa"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/marasa_id"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <TextView
+                android:text="Marasa Umubano Hotel"
+                android:padding="25dp"
+                android:textSize="20sp"
+                android:textColor="#FF5733"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Description"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=" The right hotel at the best price"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/mountain"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_location"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Location"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/located_in_kigali_city"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/location"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_killometer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#6C6B6A"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="20dp"
+                    android:text="Kilometre from Remera"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="8.9km from Remera"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/gps"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#6C6B6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_link"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:textStyle="bold"
+                      android:textColor="#6C6B6A"
+                      android:fontFamily="sans-serif-medium"
+                      android:paddingLeft="20dp"
+                      android:text="Website"
+                      android:layout_marginBottom="1dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                  <TextView
+                      android:text="http://www.umubanohotel.rw/en/"
+                      android:paddingLeft="20dp"
+                      android:drawableLeft="@drawable/link"
+                      android:drawablePadding="3dp"
+                      android:fontFamily="sans-serif-medium"
+                      android:textColor="#6C6B6A"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+              </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_phone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#6C6B6A"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="20dp"
+                        android:text="Phone"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="0788 136 000"
+                        android:paddingLeft="20dp"
+                        android:drawableLeft="@drawable/phonenumbers"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#6C6B6A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

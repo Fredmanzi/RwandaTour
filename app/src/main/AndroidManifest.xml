@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rwandatour">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity" >
+
+        </activity>
+        <activity android:name=".GorillaActivity" />
+        <activity android:name=".GishwatiActivity" />
+        <activity android:name=".GenocideActivity" />
+        <activity android:name=".ChimpanzeActivity" />
+        <activity android:name=".BirdActivity" />
+        <activity android:name=".VirungahotActivity" />
+        <activity android:name=".UmubanoActivity" />
+        <activity android:name=".UbumweActivity" />
+        <activity android:name=".SerenaKigaliActivity" />
+        <activity android:name=".OnomoActivity" />
+        <activity android:name=".MarriothotelActivity" />
+        <activity android:name=".SerenaActivity" />
+        <activity android:name=".KarisimbActivity" />
+        <activity android:name=".ChezlandoActivity" />
+        <activity android:name=".VibeActivity" />
+        <activity android:name=".BourbonActivity" />
+        <activity android:name=".TrophyActivity" />
+        <activity android:name=".SoleActivity" />
+        <activity android:name=".SimbaActivity" />
+        <activity android:name=".PoivreActivity" />
+        <activity android:name=".MezefreshActivity" />
+        <activity android:name=".MarriotActivity" />
+        <activity android:name=".JumiaActivity" />
+        <activity android:name=".BrachetoActivity" />
+        <activity android:name=".VolcanoActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".TwothousandActivity" />
+        <activity android:name=".HotspringActivity" />
+        <activity android:name=".CricketActivity" />
+        <activity android:name=".ShopingActivity" />
+        <activity android:name=".TransportActivity" />
+        <activity android:name=".SportsActivity" />
+        <activity android:name=".AttractionActivity" />
+        <activity android:name=".HotelsActivity" />
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".IbereActivity" />
+        <activity android:name=".UrukariActivity" />
+        <activity android:name=".KivuActivity" />
+        <activity android:name=".NyungweActivity" />
+        <activity android:name=".KimironkoActivity" />
+        <activity android:name=".ConvetionActivity" />
+        <activity android:name=".BisokeActivity" />
+        <activity android:name=".CongoActivity" />
+        <activity android:name=".StadeActivity" />
+        <activity android:name=".AkageraActivity" />
+        <activity android:name=".VirungaActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

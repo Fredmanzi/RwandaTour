@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_id"
+        android:src="@drawable/virung"
+        android:layout_width="80dp"
+        android:layout_height="53dp" />
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+        <TextView
+            tools:text="lake kivu"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="3h 6min from kigali"
+            android:textStyle="normal"
+            android:id="@+id/time_id"
+            android:textSize="13sp"
+            android:textColor="#fff"
+           android:drawableLeft="@drawable/time"
+            android:drawablePadding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="135km from kigali"
+            android:textSize="13sp"
+            android:drawableLeft="@drawable/navigation"
+            android:drawablePadding="3dp"
+            android:id="@+id/kilometers"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

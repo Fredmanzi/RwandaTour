@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MarriothotelActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/marriothotel_id"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_height="200dp"
+            android:background="@drawable/marrio"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/marriothotel_id"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <TextView
+                android:text="Marriot Hotel Kigali"
+                android:padding="25dp"
+                android:textSize="20sp"
+                android:textColor="#FF5733"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="2dp">
+                <TextView
+                    android:text=" The right hotel at the best price"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/mountain"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#6C6B6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_location"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="2dp">
+                <TextView
+                    android:text="@string/located_in_kigali_city"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#6C6B6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_killometer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="2dp">
+
+                <TextView
+                    android:text="9.5km from Remera"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/gps"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#6C6B6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_link"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="2dp">
+
+                <TextView
+                    android:text="https://www.marriott.com/default.mi"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/link"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#6C6B6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_phone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                card_view:cardCornerRadius="2dp">
+
+                <TextView
+                    android:text="222 111 111"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/phonenumbers"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#6C6B6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
